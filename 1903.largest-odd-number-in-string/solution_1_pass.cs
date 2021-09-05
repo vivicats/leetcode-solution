@@ -1,11 +1,13 @@
-public string LargestOddNumber(string num)
-{
-    var endIndex = num.Length;
-
-    while (endIndex > 0 && num[endIndex - 1] % 2 == 0)
+public class Solution {
+    public string LargestOddNumber(string num)
     {
-        endIndex--;
-    }
+        var endIndex = num.Length;
 
-    return num.Substring(0, endIndex);
+        while (endIndex > 0 && num[endIndex - 1] % 2 == 0)
+        {
+            endIndex--;
+        }
+
+        return num.Substring(0, endIndex);
+    }
 }
